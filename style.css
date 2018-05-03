@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100vh;
+    
+}
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.5)),url(homebg.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.benfont{
+    margin-top: 80px;
+    text-align: center;
+    font-family: 'Aclonica', sans-serif;
+    font-size: 80px;
+    color: #FFF;
+    text-align: center;
+}
+
+.headphotofont{
+    margin-bottom: 80px;
+    font-family: 'Alex Brush', cursive;
+    font-size: 40px;
+    color: #FFF;
+    text-align: center;
+}
+
+.headlines{
+    width: 660px;
+    height: 2px;
+    background-color: #FFF;
+    display: block;
+    content: " ";
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.headlines-top{
+    margin-top: 200px;
+}
+
+
+/*  This is for the navbar  */
+
+
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+/* The Button To open the nav */
+
+
+.nav-open-btn{
+    color: #FFF;
+}
+
+.navopenmore{
+    margin-top: 100px;
+}
+
+.hamnavcont{
+    font-family: 'Bad Script', cursive;
+}
+
+
+
+/* Navbar Done  */
+
+.subtitle{
+    font-family: 'Rancho', cursive;
+    font-size: 60px;
+}
+
+.maincontent{
+    font-size: 20px;
+}
+
+.recgear{
+    background-image: url(bg2.jpg);
+}
+
+.cam1{
+    text-align:center;
+}
+
+.mySlides {display:none}
+
+.demo {cursor:pointer}
+
+/* Event Section */
+
+.event-dis-pic{
+    height: 250px;
+    width: 250px;
+}
+
+
+/* Blog Section */
+
+
+
+.blogbox{
+    position: relative;
+    width: 90%;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #000;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+
+.blogbox:hover{
+    transform: translateY(-30px);
+    box-shadow: 0 50px 50px rgba(0,0,0,0.5);
+}
+
+.blogbox .blogimgbox{
+    position: relative;
+}
+
+.blogbox .blogimgbox img{
+    transition: 0.5s;
+}
+
+.blogbox:hover .blogimgbox img{
+    opacity: 0.5;
+    transform: translateY(-40px);
+}
+
+.blogbox .blog-content{
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.blogbox:hover .blog-content{
+    bottom: 0;
+    opacity: 1;
+}
+
+.blogbox .blog-content h3{
+    font-size: 48px;
+    color: #FFF
+}
+
+.blogbox .blog-content p{
+    font-size: 14px;
+    color: #FFF
+}
+
+.blogbox .blog-content .btnD{
+    border: none;
+    background: #2EFF3E;
+    color: #FFF;
+    padding: 10px 20px;
+    transition: 0.5s;
+}
+
+.blogbox .blog-content .btnD:hover{
+    background: #2E9DFF;
+    color: #000;
+}
+
+
+
+
+
+
+
+
